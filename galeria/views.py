@@ -23,3 +23,11 @@ def buscar(request):
             fotografias = fotografias.filter(nome__icontains=nome_a_buscar)
 
     return render(request, 'galeria/buscar.html', {"cards": fotografias})
+
+def busca_tag(request, tag):
+
+    fotografias = Fotografia.objects.filter(publicada=True)
+
+    fotografias = fotografias.filter(categoria__exact=tag.upper())
+
+    return render(request, 'galeria/index.html', {"cards": fotografias})

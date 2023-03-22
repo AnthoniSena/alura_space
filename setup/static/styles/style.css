@@ -156,11 +156,11 @@ table {
     font-size: 1.2rem;
     left: 310px;
     margin-right: 1.5rem;
-    padding: .5rem .5rem;
+    padding: .5rem .3rem;
     position: absolute;
     text-align: center;
     top: 20px;
-    width: 100px;
+    width: 130px;
 }
 
 .card__info {
@@ -368,12 +368,18 @@ table {
     display: flex;
 }
 
+.tag__link {
+    text-decoration: none;
+    color: #D9D9D9;
+    width: 130px;
+}
+
 .tags__tag {
     background-color: #D9D9D930;
     margin-right: 1.5rem;
     border-radius: 8px;
     padding: .8rem .5rem;
-    width: 100px;
+    width: 130px;
     text-align: center;
     border: 2px solid transparent;
 }
