@@ -36,6 +36,10 @@ def buscar(request):
 
 def busca_tag(request, tag):
 
+    if not request.user.is_authenticated:
+        messages.error(request, "Usuário não logado")
+        return redirect('login')
+
     fotografias = Fotografia.objects.filter(publicada=True)
 
     fotografias = fotografias.filter(categoria__exact=tag.upper())
