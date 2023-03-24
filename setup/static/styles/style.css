@@ -160,7 +160,7 @@ table {
     position: absolute;
     text-align: center;
     top: 20px;
-    width: 130px;
+    width: 120px;
 }
 
 .card__info {
@@ -387,4 +387,18 @@ table {
 .tags__tag:hover {
     border: 2px solid #7B78E5;
     cursor: pointer;
+}
+
+.alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
 }
